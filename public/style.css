@@ -1,0 +1,347 @@
+body {
+  background: rgb(25,25,25);
+  font-weight: 900;
+}
+
+.console-box {
+  width: 80%;
+  max-width: 920px;
+  max-height: 100vw;
+  margin: 50px auto;
+  padding-left: 0; 
+  font-family: Monospace, sans-serif;
+  background: #404041;
+  border-radius: 5px;
+/*overflow: auto;*/
+  counter-reset: codeline; 
+  -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+}
+
+.console-box > li {
+  position: relative;
+  margin-left: 40px; 
+  padding: 1px 10px;
+  list-style: none;
+}
+
+.console-box > li:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  top: 0;
+  left: -40px;
+  padding-top: 1px;
+  padding-right: 8px;
+  text-align: right;
+  background: #2e2e2f;
+  color: #59595b; 
+  content: counter(codeline);
+  counter-increment: codeline;
+}
+
+.console-box > li:first-child {
+  padding-top: 16px;
+}
+
+.console-box > li:first-child:before {
+  padding-top: 16px;
+}
+
+.console-box > li:last-child {
+  padding-bottom: 16px;
+}
+
+.console-box > li ul {
+  padding-left: 20px;
+}
+
+.console-box > li ul li {
+  list-style: none;
+}
+
+.console-box > li  pre {
+  margin: 0;
+}
+
+/* Monokai color pattern */
+.monokai-black {
+  color: #000000;
+}
+
+.monokai-hardgrey {
+  color: #272822;
+}
+
+.monokai-darkgrey {
+  color: #3B3A32;
+}
+
+.monokai-grey {
+  color: #49483E;
+}
+
+.monokai-lightgrey {
+  color: #90907C;
+}
+
+.monokai-white {
+  color: #F5F5EC;
+}
+
+.monokai-yellow {
+  color: #FFE792;
+}
+
+.monokai-orange {
+  color: #FD971F;
+}
+
+.monokai-red {
+  color: #F92672;
+}
+
+.monokai-violet {
+  color: #AE81FF;
+}
+
+.monokai-teal {
+  color: #66D9EF;
+}
+
+.monokai-green {
+  color: #A6E22E;
+}
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #9E9E9E; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #616161; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.component {
+  padding: .5rem;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.component .typewriter {
+  margin: .5rem;
+  padding: 1rem .5rem;
+  text-align: left;
+  font-weight: 900;
+}
+.component .typewriter > span {
+  display: inline-block;
+}
+.component .typewriter.animate > span > i {
+  -webkit-animation: typewriter 300ms forwards, background 1000ms forwards;
+          animation: typewriter 300ms forwards, background 1000ms forwards;
+}
+.component .typewriter > span > i {
+  opacity: 0;
+  color:#ffe792;
+  font-style: normal;
+  font-size: 1em;
+  min-width: .4em;
+  border-radius: 2px;
+}
+.component .typewriter > span > i:nth-of-type(1) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+.component .typewriter > span > i:nth-of-type(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.component .typewriter > span > i:nth-of-type(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.component .typewriter > span > i:nth-of-type(4) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+.component .typewriter > span > i:nth-of-type(5) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+.component .typewriter > span > i:nth-of-type(6) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.component .typewriter > span > i:nth-of-type(7) {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+.component .typewriter > span > i:nth-of-type(8) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+.component .typewriter > span > i:nth-of-type(9) {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+.component .typewriter > span > i:nth-of-type(10) {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+.component .typewriter > span > i:nth-of-type(11) {
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
+}
+.component .typewriter > span > i:nth-of-type(12) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+.component .typewriter > span > i:nth-of-type(13) {
+  -webkit-animation-delay: 1300ms;
+          animation-delay: 1300ms;
+}
+.component .typewriter > span > i:nth-of-type(14) {
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
+}
+.component .typewriter > span > i:nth-of-type(15) {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+.component .typewriter > span > i:nth-of-type(16) {
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+.component .typewriter > span > i:nth-of-type(17) {
+  -webkit-animation-delay: 1700ms;
+          animation-delay: 1700ms;
+}
+.component .typewriter > span > i:nth-of-type(18) {
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+.component .typewriter > span > i:nth-of-type(19) {
+  -webkit-animation-delay: 1900ms;
+          animation-delay: 1900ms;
+}
+.component .typewriter > span > i:nth-of-type(20) {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+.component .typewriter > span > i:nth-of-type(21) {
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
+}
+.component .typewriter > span > i:nth-of-type(22) {
+  -webkit-animation-delay: 2200ms;
+          animation-delay: 2200ms;
+}
+.component .typewriter > span > i:nth-of-type(23) {
+  -webkit-animation-delay: 2300ms;
+          animation-delay: 2300ms;
+}
+.component .typewriter > span > i:nth-of-type(24) {
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+}
+.component .typewriter > span > i:nth-of-type(25) {
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
+}
+.component .typewriter > span > i:nth-of-type(26) {
+  -webkit-animation-delay: 2600ms;
+          animation-delay: 2600ms;
+}
+.component .typewriter > span > i:nth-of-type(27) {
+  -webkit-animation-delay: 2700ms;
+          animation-delay: 2700ms;
+}
+.component .typewriter > span > i:nth-of-type(28) {
+  -webkit-animation-delay: 2800ms;
+          animation-delay: 2800ms;
+}
+.component .typewriter > span > i:nth-of-type(29) {
+  -webkit-animation-delay: 2900ms;
+          animation-delay: 2900ms;
+}
+.component .typewriter > span > i:nth-of-type(30) {
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+}
+.component .btn-replay {
+  padding: .5rem;
+  background: white;
+  border: 0;
+  box-shadow: 1px 1px 2px #777;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@-webkit-keyframes typewriter {
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typewriter {
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes background {
+  0% {
+    background: rgba(17, 17, 17, 0.1);
+  }
+}
+@keyframes background {
+  0% {
+    background: rgba(17, 17, 17, 0.1);
+  }
+}
